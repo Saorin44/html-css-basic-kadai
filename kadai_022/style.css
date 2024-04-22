@@ -1,0 +1,59 @@
+body{
+  margin: 0px;
+}
+
+header{
+  margin-bottom: 20px;
+  background-color: rgb(244,79,79);
+  text-align: center;
+}
+main{
+  margin: 10px,0px;
+}
+
+h1{
+  color: rgb(255,255,255);
+  margin: 0px auto;
+}
+
+h2{
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(239,111,139);
+}
+
+p{
+  margin: 0px;
+}
+
+p:nth-child(3)::first-letter{
+  color: skyblue;
+  font-weight: bold;
+}
+
+#parent{
+  text-align:  center;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: center;
+}
+
+.contents{
+  text-align: center;
+
+  padding: 10px,15px;
+  flex-basis: 25%;
+  border:solid 3px rgb(238, 204, 204)
+}
+.contents img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 768px){
+  div{
+    display: inline-block;
+  }
+}
