@@ -11,6 +11,11 @@ main{
   margin: 10px,0px;
 }
 
+footer{
+  background-color: rgb(244,79,79);
+  text-align: center;
+}
+
 h1{
   color: rgb(255,255,255);
   margin: 0px auto;
@@ -21,13 +26,22 @@ h2{
   border-bottom: dotted 3px rgb(239,111,139);
 }
 
+h2::before{
+  content: "●";
+  color: rgb(239, 111, 139);
+}
 p{
   margin: 0px;
+  font-size: 20px;
 }
 
 p:nth-child(3)::first-letter{
   color: skyblue;
   font-weight: bold;
+}
+
+a{
+  font-size: 20px;
 }
 
 #parent{
@@ -37,23 +51,46 @@ p:nth-child(3)::first-letter{
 .flexbox{
   display: flex;
   justify-content: center;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  text-align: center;
 }
 
 .contents{
   text-align: center;
-
-  padding: 10px,15px;
   flex-basis: 25%;
+  margin: 20px 0px;
+  padding: 15px 10px;
   border:solid 3px rgb(238, 204, 204)
 }
+
 .contents img{
-  max-width: 100%;
+  margin: 10px 0px;
+  width: 70%;
   height: auto;
 }
 
-
-@media screen and (max-width: 768px){
-  div{
-    display: inline-block;
+@media screen and (max-width: 768px) {
+  .flexbox{
+    display: block;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align: center;
+  }
+  h2{
+    font-size: 30px;
+  }
+  p{
+    font-size: 25px;
   }
 }
+
+a:link{
+  color: rgb(255,255,255);
+}
+a:visited{
+  color: rgb(193,234,251);
+}
+a:hover{
+  color: rgb(245,178,168);
