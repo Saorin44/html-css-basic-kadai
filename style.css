@@ -16,12 +16,8 @@ h1{
     letter-spacing: 1.2em;
     border-bottom:solid 3px rgb(115, 115, 114);
     text-shadow: 1px 1px 2px gray;
-}
-.font_w{
-    font-weight: bold
-}
 
-.textcolor_p{
+    .textcolor_p{
     color:rgb(255, 192, 203)
 }
 
