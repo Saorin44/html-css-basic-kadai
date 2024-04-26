@@ -1,5 +1,6 @@
 body{
     font-family: "Arial", "Meiryo", sans-serif;
+    text-align: center;
 }
 
 html{
@@ -30,10 +31,6 @@ h1{
 }
 
 
-#parent > p {
+#basic > p {
     font-weight: bold;
-    text-align: center;
-}
-#parent{
-    text-align: center;
 }
